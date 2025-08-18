@@ -27,7 +27,7 @@
 <meta property="og:description" content="SLURM集群部署1，节点基础配置1.1 所有节点 设置主机名 1234hostnamectl set-hostname manage01hostnamectl set-hostname login01hostnamectl set-hostname compute01hostnamectl set-hostname dcv01    配置hosts 123456vim &#x2F;etc&#x2F;hosts192">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-08-18T14:04:58.000Z">
-<meta property="article:modified_time" content="2025-08-18T14:20:06.000Z">
+<meta property="article:modified_time" content="2025-08-18T14:45:27.580Z">
 <meta property="article:author" content="Nier Demon">
 <meta property="article:tag" content="Slurm">
 <meta name="twitter:card" content="summary_large_image">
@@ -356,7 +356,7 @@
 <li><p>Munge是认证服务，实现本地或者远程主机进程的UID、GID验证。</p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cmake">yum <span class="hljs-keyword">install</span> epel-release -y<br>yum <span class="hljs-keyword">install</span> munge munge-libs munge-devel -y<br></code></pre></td></tr></table></figure>
 
-<p><strong>注意</strong>：munge-devel如果在rocky9官方源找不到，[点这里](<a target="_blank" rel="noopener" href="https://rockylinux.pkgs.org/9/rockylinux-devel-x86_64/munge-devel-0.5.13-13.el9.x86_64.rpm.html">munge-devel-0.5.13-13.el9.x86_64.rpm Rocky Linux 9 Download</a>)</p>
+<p><strong>注意</strong>：munge-devel如果在rocky9官方源找不到，<a target="_blank" rel="noopener" href="https://rockylinux.pkgs.org/9/rockylinux-devel-x86_64/munge-devel-0.5.13-13.el9.x86_64.rpm.html">点这里</a></p>
 </li>
 <li><p>创建全局密钥，在管理节点创建全局使用的密钥</p>
 <figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dsconfig">/<span class="hljs-string">usr</span>/<span class="hljs-string">sbin</span>/<span class="hljs-built_in">create-munge-key</span> -<span class="hljs-string">r</span><br><span class="hljs-string">dd</span> <span class="hljs-string">if</span>=/<span class="hljs-string">dev</span>/<span class="hljs-string">urandom</span> <span class="hljs-string">bs</span>=<span class="hljs-string">1</span> <span class="hljs-string">count</span>=<span class="hljs-string">1024</span> &gt; /<span class="hljs-string">etc</span>/<span class="hljs-string">munge</span>/<span class="hljs-string">munge</span>.<span class="hljs-string">key</span><br></code></pre></td></tr></table></figure>
