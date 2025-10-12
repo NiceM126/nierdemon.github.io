@@ -19,22 +19,22 @@
   <meta name="author" content="Nier Demon">
   <meta name="keywords" content="">
   
-    <meta name="description" content="配置本地yum源查看光驱是否挂载df -h 12345678910Filesystem             Size  Used Avail Use% Mounted ondevtmpfs               3.8G     0  3.8G   0% &#x2F;devtmpfs                  3.8G     0  3.8G   0% &#x2F;dev&#x2F;shmtmpfs">
+    <meta name="description" content="XFCE 桌面环境是您可以在我们的 Linux 系统上安装以增强用户体验的多种桌面环境之一。它是最早的桌面环境之一，于 1996 年首次发布，作为 CDE（通用桌面环境）的替代品。 XFCE 是一种轻量级桌面环境，内存占用较小，并且易于占用您的计算资源。与 GNOME 和 KDE 等同类产品相比，它只占用 CPU 和内存使用量的一小部分。 当涉及到系统性能时，这是理想的，因为这可以将可用资源用于其">
 <meta property="og:type" content="article">
-<meta property="og:title" content="redhat安装nvidia驱动">
-<meta property="og:url" content="https://nicem126.github.io/2025/09/19/redhat%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/index.html">
+<meta property="og:title" content="rhel安装xfce桌面">
+<meta property="og:url" content="https://nicem126.github.io/2025/10/12/rhel%E5%AE%89%E8%A3%85xfce%E6%A1%8C%E9%9D%A2/index.html">
 <meta property="og:site_name" content="Nier Demon">
-<meta property="og:description" content="配置本地yum源查看光驱是否挂载df -h 12345678910Filesystem             Size  Used Avail Use% Mounted ondevtmpfs               3.8G     0  3.8G   0% &#x2F;devtmpfs                  3.8G     0  3.8G   0% &#x2F;dev&#x2F;shmtmpfs">
+<meta property="og:description" content="XFCE 桌面环境是您可以在我们的 Linux 系统上安装以增强用户体验的多种桌面环境之一。它是最早的桌面环境之一，于 1996 年首次发布，作为 CDE（通用桌面环境）的替代品。 XFCE 是一种轻量级桌面环境，内存占用较小，并且易于占用您的计算资源。与 GNOME 和 KDE 等同类产品相比，它只占用 CPU 和内存使用量的一小部分。 当涉及到系统性能时，这是理想的，因为这可以将可用资源用于其">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-09-19T14:44:48.000Z">
-<meta property="article:modified_time" content="2025-10-11T09:09:40.000Z">
+<meta property="article:published_time" content="2025-10-12T14:08:12.000Z">
+<meta property="article:modified_time" content="2025-10-12T14:18:30.534Z">
 <meta property="article:author" content="Nier Demon">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>redhat安装nvidia驱动 - Nier Demon</title>
+  <title>rhel安装xfce桌面 - Nier Demon</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -200,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="redhat安装nvidia驱动"></span>
+            <span id="subtitle" data-typed-text="rhel安装xfce桌面"></span>
           
         </div>
 
@@ -211,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-09-19 22:44" pubdate>
-          2025年9月19日 晚上
+        <time datetime="2025-10-12 22:08" pubdate>
+          2025年10月12日 晚上
         </time>
       </span>
     
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          313 字
+          487 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -280,24 +280,39 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">redhat安装nvidia驱动</h1>
+            <h1 id="seo-header">rhel安装xfce桌面</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="配置本地yum源"><a href="#配置本地yum源" class="headerlink" title="配置本地yum源"></a>配置本地yum源</h2><h3 id="查看光驱是否挂载"><a href="#查看光驱是否挂载" class="headerlink" title="查看光驱是否挂载"></a>查看光驱是否挂载</h3><p><code>df -h</code></p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs crystal">Filesystem             Size  Used Avail Use% Mounted on<br>devtmpfs               <span class="hljs-number">3.8</span>G     <span class="hljs-number">0</span>  <span class="hljs-number">3.8</span>G   <span class="hljs-number">0</span>% <span class="hljs-regexp">/dev</span><br><span class="hljs-regexp">tmpfs                  3.8G     0  3.8G   0% /dev</span><span class="hljs-regexp">/shm</span><br><span class="hljs-regexp">tmpfs                  3.8G  9.2M  3.8G   1% /run</span><br>tmpfs                  <span class="hljs-number">3.8</span>G     <span class="hljs-number">0</span>  <span class="hljs-number">3.8</span>G   <span class="hljs-number">0</span>% <span class="hljs-regexp">/sys/fs</span><span class="hljs-regexp">/cgroup</span><br><span class="hljs-regexp">/dev</span><span class="hljs-regexp">/mapper/rhel</span>-root   <span class="hljs-number">35</span>G  <span class="hljs-number">5.7</span>G   <span class="hljs-number">30</span>G  <span class="hljs-number">17</span>% <span class="hljs-regexp">/</span><br><span class="hljs-regexp">/dev</span><span class="hljs-regexp">/xvda1            1014M  265M  750M  27% /boot</span><br>tmpfs                  <span class="hljs-number">766</span>M   <span class="hljs-number">12</span>K  <span class="hljs-number">766</span>M   <span class="hljs-number">1</span>% <span class="hljs-regexp">/run/user</span><span class="hljs-regexp">/42</span><br><span class="hljs-regexp">tmpfs                  766M     0  766M   0% /run</span><span class="hljs-regexp">/user/</span><span class="hljs-number">0</span><br><span class="hljs-regexp">/dev/sr</span>0                <span class="hljs-number">12</span>G   <span class="hljs-number">12</span>G     <span class="hljs-number">0</span> <span class="hljs-number">100</span>% <span class="hljs-regexp">/media/iso</span><br></code></pre></td></tr></table></figure>
+                <p><strong>XFCE</strong> 桌面环境是您可以在我们的 Linux 系统上安装以增强用户体验的多种桌面环境之一。它是最早的桌面环境之一，于 1996 年首次发布，作为 <strong>CDE</strong>（<strong>通用桌面环境</strong>）的替代品。</p>
+<p><strong>XFCE</strong> 是一种轻量级桌面环境，内存占用较小，并且易于占用您的计算资源。与 <strong>GNOME</strong> 和 <strong>KDE</strong> 等同类产品相比，它只占用 CPU 和内存使用量的一小部分。</p>
+<p>当涉及到系统性能时，这是理想的，因为这可以将可用资源用于其他进程。此外，<strong>XFCE</strong> 具有高度可配置性、稳定性，并提供大量内置插件来扩展功能。</p>
+<h2 id="1-安装-EPEL-存储库和组"><a href="#1-安装-EPEL-存储库和组" class="headerlink" title="1.安装 EPEL 存储库和组"></a>1.安装 EPEL 存储库和组</h2><p><strong>XFCE</strong>桌面环境的安装需要我们首先安装<strong>EPEL</strong>存储库，这是一个为RHEL发行版提供高质量软件包的存储库。</p>
+<p>要在您的系统上安装 <strong>EPEL</strong>，请运行以下命令：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">sudo dnf install epel-release<br></code></pre></td></tr></table></figure>
 
-<h3 id="挂载光驱"><a href="#挂载光驱" class="headerlink" title="挂载光驱"></a>挂载光驱</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> -p /media/iso<br>mount -t iso9660 /dev/sr0 /media/iso<br><span class="hljs-comment">#df -h 输出</span><br>Filesystem             Size  Used Avail Use% Mounted on<br>devtmpfs               3.8G     0  3.8G   0% /dev<br>tmpfs                  3.8G     0  3.8G   0% /dev/shm<br>tmpfs                  3.8G  9.2M  3.8G   1% /run<br>tmpfs                  3.8G     0  3.8G   0% /sys/fs/cgroup<br>/dev/mapper/rhel-root   35G  5.7G   30G  17% /<br>/dev/xvda1            1014M  265M  750M  27% /boot<br>tmpfs                  766M   12K  766M   1% /run/user/42<br>tmpfs                  766M     0  766M   0% /run/user/0<br>/dev/sr0                12G   12G     0 100% /media/iso<br></code></pre></td></tr></table></figure>
+<p>安装<strong>EPEL</strong>后，您可以通过执行 rpm 命令确认其存在：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">rpm -qi epel-release<br></code></pre></td></tr></table></figure>
 
-<h3 id="创建本地local-repo"><a href="#创建本地local-repo" class="headerlink" title="创建本地local.repo"></a>创建本地local.repo</h3><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs routeros">nano /etc/yum.repos.d<br>[RHEL-BaseOS]<br><span class="hljs-attribute">name</span>=BaseOS<br><span class="hljs-attribute">baseurl</span>=file:///media/iso/BaseOS<br><span class="hljs-attribute">gpgcheck</span>=0<br><span class="hljs-attribute">enabled</span>=1<br><br>[RHEL-AppStream]<br>name= AppStream<br><span class="hljs-attribute">baseurl</span>=file:///media/iso/AppStream<br><span class="hljs-attribute">gpgcheck</span>=0<br><span class="hljs-attribute">enabled</span>=1<br><br><span class="hljs-comment">#清空yum缓存</span><br>yum clean all<br><span class="hljs-comment">#存储yum元数据缓存</span><br>yum makecache<br><span class="hljs-comment">#更新yum源</span><br>yum update<br></code></pre></td></tr></table></figure>
+<p>接下来，启用 <strong>EPEL</strong> 组：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">sudo dnf <span class="hljs-attribute">--enablerepo</span>=epel group<br></code></pre></td></tr></table></figure>
 
-<h2 id="安装kernel-devel、gcc、make"><a href="#安装kernel-devel、gcc、make" class="headerlink" title="安装kernel-devel、gcc、make"></a>安装kernel-devel、gcc、make</h2><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">yum</span> install kernel-devel<br><span class="hljs-attribute">yum</span> install gcc<br><span class="hljs-attribute">yum</span> install make<br><br><span class="hljs-comment">#uname -r查看内核版本是否一致</span><br><span class="hljs-attribute">4</span>.<span class="hljs-number">18</span>.<span class="hljs-number">0</span>-<span class="hljs-number">477</span>.<span class="hljs-number">10</span>.<span class="hljs-number">1</span>.el8_8.x86_64<br><span class="hljs-comment">#rpm -qa | grep kernel</span><br><br><span class="hljs-attribute">kernel</span>-tools-libs-<span class="hljs-number">4</span>.<span class="hljs-number">18</span>.<span class="hljs-number">0</span>-<span class="hljs-number">477</span>.<span class="hljs-number">10</span>.<span class="hljs-number">1</span>.el8_8.x86_64<br><span class="hljs-attribute">kernel</span>-tools-<span class="hljs-number">4</span>.<span class="hljs-number">18</span>.<span class="hljs-number">0</span>-<span class="hljs-number">477</span>.<span class="hljs-number">10</span>.<span class="hljs-number">1</span>.el8_8.x86_64<br><span class="hljs-attribute">kernel</span>-<span class="hljs-number">4</span>.<span class="hljs-number">18</span>.<span class="hljs-number">0</span>-<span class="hljs-number">477</span>.<span class="hljs-number">10</span>.<span class="hljs-number">1</span>.el8_8.x86_64<br><span class="hljs-attribute">kernel</span>-core-<span class="hljs-number">4</span>.<span class="hljs-number">18</span>.<span class="hljs-number">0</span>-<span class="hljs-number">477</span>.<span class="hljs-number">10</span>.<span class="hljs-number">1</span>.el8_8.x86_64<br><span class="hljs-attribute">kernel</span>-modules-<span class="hljs-number">4</span>.<span class="hljs-number">18</span>.<span class="hljs-number">0</span>-<span class="hljs-number">477</span>.<span class="hljs-number">10</span>.<span class="hljs-number">1</span>.el8_8.x86_64<br><br></code></pre></td></tr></table></figure>
+<h2 id="2-安装-XFCE"><a href="#2-安装-XFCE" class="headerlink" title="2.安装 XFCE"></a>2.安装 XFCE</h2><p>安装<strong>EPEL</strong>后，下一步是安装<strong>XFCE</strong>软件包。您可以确认 <strong>XFCE</strong> 软件包是由 <strong>EPEL</strong> 存储库提供的软件包组：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">sudo dnf <span class="hljs-keyword">group</span> <span class="hljs-title">list</span> | grep -i xfce<br>Xfce<br></code></pre></td></tr></table></figure>
 
-<h2 id="禁用nouveau"><a href="#禁用nouveau" class="headerlink" title="禁用nouveau"></a>禁用nouveau</h2><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs perl">lsmod | <span class="hljs-keyword">grep</span> nouveau       <span class="hljs-comment">#应该无任何输出</span><br><span class="hljs-comment">#查看是否检测到显卡</span><br>lspci | <span class="hljs-keyword">grep</span> VGA<br><br><span class="hljs-comment">#设置禁用nouveau</span><br>nano /etc/modprobe.d/blacklist-nouveau.conf<br><span class="hljs-comment">#添加下面两行</span><br>blacklist nouveau<br>options nouveau modeset=<span class="hljs-number">0</span><br><br><span class="hljs-comment">#重新生成 initramfs 映像，确保系统包含了最新的驱动程序和配置</span><br>dracut -f<br><br><span class="hljs-comment">#重启系统</span><br>reboot<br></code></pre></td></tr></table></figure>
+<p>从输出中，我们可以推断 XFCE 包可用。因此，要安装 <strong>XFCE</strong> 软件包，请运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> dnf groupinstall <span class="hljs-string">&quot;Xfce&quot;</span> <span class="hljs-string">&quot;base-x&quot;</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="执行run文件安装nvidia驱动"><a href="#执行run文件安装nvidia驱动" class="headerlink" title="执行run文件安装nvidia驱动"></a>执行run文件安装nvidia驱动</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs routeros">chmod +x NVIDIA-Linux-x86_64-535.146.02.<span class="hljs-built_in">run</span> <br>./NVIDIA-Linux-x86_64-535.146.02.<span class="hljs-built_in">run</span> <br></code></pre></td></tr></table></figure>
+<p>该命令会在您的系统上安装所有 <strong>XFCE</strong> 组和模块包以及其他依赖项。</p>
+<h2 id="3-将-XFCE-设置为自动启动"><a href="#3-将-XFCE-设置为自动启动" class="headerlink" title="3.将 XFCE 设置为自动启动"></a>3.将 XFCE 设置为自动启动</h2><p>如果您运行的是最小安装，请将 <strong>XFCE</strong> 桌面环境配置为在启动时自动启动。</p>
+<figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dsconfig"><span class="hljs-string">sudo</span> <span class="hljs-string">echo</span> <span class="hljs-string">&quot;exec /usr/bin/xfce4-session&quot;</span> &gt;&gt;  ~/.<span class="hljs-string">xinitrc</span><br><span class="hljs-string">sudo</span> <span class="hljs-string">systemctl</span> <span class="hljs-built_in">set-default</span> <span class="hljs-string">graphical</span><br></code></pre></td></tr></table></figure>
 
+<p>最后，重新启动系统。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> reboot<br></code></pre></td></tr></table></figure>
+
+<p>如果您已经安装了<strong>GNOME</strong>，则需要单击“<strong>登录</strong>”按钮旁边的小齿轮图标，然后选择“<strong>Xfce 会话</strong>”选项。</p>
+<p>这将引导您进入 <strong>Xfce</strong> 桌面环境。</p>
 
                 
               </div>
@@ -343,8 +358,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>redhat安装nvidia驱动</div>
-      <div>https://nicem126.github.io/2025/09/19/redhat安装nvidia驱动/</div>
+      <div>rhel安装xfce桌面</div>
+      <div>https://nicem126.github.io/2025/10/12/rhel安装xfce桌面/</div>
     </div>
     <div class="license-meta">
       
@@ -356,7 +371,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年9月19日</div>
+          <div>2025年10月12日</div>
         </div>
       
       
@@ -388,18 +403,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/10/12/rhel%E5%AE%89%E8%A3%85xfce%E6%A1%8C%E9%9D%A2/" title="rhel安装xfce桌面">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">rhel安装xfce桌面</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/08/23/LDAP%E9%85%8D%E7%BD%AE/" title="LDAP配置">
-                        <span class="hidden-mobile">LDAP配置</span>
+                      <a href="/2025/09/19/redhat%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/" title="redhat安装nvidia驱动">
+                        <span class="hidden-mobile">redhat安装nvidia驱动</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

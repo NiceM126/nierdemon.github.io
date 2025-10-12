@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>rhel安装xfce桌面</title>
+    <link href="/2025/10/12/rhel%E5%AE%89%E8%A3%85xfce%E6%A1%8C%E9%9D%A2/"/>
+    <url>/2025/10/12/rhel%E5%AE%89%E8%A3%85xfce%E6%A1%8C%E9%9D%A2/</url>
+    
+    <content type="html"><![CDATA[<p><strong>XFCE</strong> 桌面环境是您可以在我们的 Linux 系统上安装以增强用户体验的多种桌面环境之一。它是最早的桌面环境之一，于 1996 年首次发布，作为 <strong>CDE</strong>（<strong>通用桌面环境</strong>）的替代品。</p><p><strong>XFCE</strong> 是一种轻量级桌面环境，内存占用较小，并且易于占用您的计算资源。与 <strong>GNOME</strong> 和 <strong>KDE</strong> 等同类产品相比，它只占用 CPU 和内存使用量的一小部分。</p><p>当涉及到系统性能时，这是理想的，因为这可以将可用资源用于其他进程。此外，<strong>XFCE</strong> 具有高度可配置性、稳定性，并提供大量内置插件来扩展功能。</p><h2 id="1-安装-EPEL-存储库和组"><a href="#1-安装-EPEL-存储库和组" class="headerlink" title="1.安装 EPEL 存储库和组"></a>1.安装 EPEL 存储库和组</h2><p><strong>XFCE</strong>桌面环境的安装需要我们首先安装<strong>EPEL</strong>存储库，这是一个为RHEL发行版提供高质量软件包的存储库。</p><p>要在您的系统上安装 <strong>EPEL</strong>，请运行以下命令：</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">sudo dnf install epel-release<br></code></pre></td></tr></table></figure><p>安装<strong>EPEL</strong>后，您可以通过执行 rpm 命令确认其存在：</p><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">rpm -qi epel-release<br></code></pre></td></tr></table></figure><p>接下来，启用 <strong>EPEL</strong> 组：</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">sudo dnf <span class="hljs-attribute">--enablerepo</span>=epel group<br></code></pre></td></tr></table></figure><h2 id="2-安装-XFCE"><a href="#2-安装-XFCE" class="headerlink" title="2.安装 XFCE"></a>2.安装 XFCE</h2><p>安装<strong>EPEL</strong>后，下一步是安装<strong>XFCE</strong>软件包。您可以确认 <strong>XFCE</strong> 软件包是由 <strong>EPEL</strong> 存储库提供的软件包组：</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">sudo dnf <span class="hljs-keyword">group</span> <span class="hljs-title">list</span> | grep -i xfce<br>Xfce<br></code></pre></td></tr></table></figure><p>从输出中，我们可以推断 XFCE 包可用。因此，要安装 <strong>XFCE</strong> 软件包，请运行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> dnf groupinstall <span class="hljs-string">&quot;Xfce&quot;</span> <span class="hljs-string">&quot;base-x&quot;</span><br></code></pre></td></tr></table></figure><p>该命令会在您的系统上安装所有 <strong>XFCE</strong> 组和模块包以及其他依赖项。</p><h2 id="3-将-XFCE-设置为自动启动"><a href="#3-将-XFCE-设置为自动启动" class="headerlink" title="3.将 XFCE 设置为自动启动"></a>3.将 XFCE 设置为自动启动</h2><p>如果您运行的是最小安装，请将 <strong>XFCE</strong> 桌面环境配置为在启动时自动启动。</p><figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs dsconfig"><span class="hljs-string">sudo</span> <span class="hljs-string">echo</span> <span class="hljs-string">&quot;exec /usr/bin/xfce4-session&quot;</span> &gt;&gt;  ~/.<span class="hljs-string">xinitrc</span><br><span class="hljs-string">sudo</span> <span class="hljs-string">systemctl</span> <span class="hljs-built_in">set-default</span> <span class="hljs-string">graphical</span><br></code></pre></td></tr></table></figure><p>最后，重新启动系统。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> reboot<br></code></pre></td></tr></table></figure><p>如果您已经安装了<strong>GNOME</strong>，则需要单击“<strong>登录</strong>”按钮旁边的小齿轮图标，然后选择“<strong>Xfce 会话</strong>”选项。</p><p>这将引导您进入 <strong>Xfce</strong> 桌面环境。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux基础</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>redhat安装nvidia驱动</title>
     <link href="/2025/09/19/redhat%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/"/>
     <url>/2025/09/19/redhat%E5%AE%89%E8%A3%85nvidia%E9%A9%B1%E5%8A%A8/</url>
